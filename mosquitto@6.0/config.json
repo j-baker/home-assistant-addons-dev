@@ -1,14 +1,27 @@
 {
   "name": "Mosquitto broker",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "slug": "mosquitto",
   "description": "An Open Source MQTT broker",
   "url": "https://github.com/home-assistant/hassio-addons/tree/master/mosquitto",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
   "startup": "system",
-  "map": ["ssl", "share"],
-  "discovery": ["mqtt"],
-  "services": ["mqtt:provide"],
+  "map": [
+    "ssl",
+    "share"
+  ],
+  "discovery": [
+    "mqtt"
+  ],
+  "services": [
+    "mqtt:provide"
+  ],
   "watchdog": "tcp://[HOST]:1883",
   "auth_api": true,
   "ports": {
